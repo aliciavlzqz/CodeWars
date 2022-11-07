@@ -17,3 +17,5 @@ function isIsogram(str){
     return new Set(str.toUpperCase()).size == str.length;
   }
   
+
+  //The size accessor property returns the number of (unique) elements in a Set object.
