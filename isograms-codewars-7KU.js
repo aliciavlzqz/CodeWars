@@ -19,3 +19,10 @@ function isIsogram(str){
   
 
   //The size accessor property returns the number of (unique) elements in a Set object.
+
+//   in javascript set is an object that takes in values, just like an array. the difference is: sets only accept unique values
+//    which means you cant have repeating values inside a set so that solution creates a Set with the letters from the passed in
+//     string. if that string has repeating letters the set will ignore those and they wont be inside our set. then we check the 
+//     SIZE of the set which is basically the same thing as checking its length. its gonna return to us the number of elements
+//      inside the set. if the set size is the same as the string lenght that means the string does not contain any repeating letters
+// (cause if it did, the set size would be less than the string side cause it wouldnt contain the repeating letters)
