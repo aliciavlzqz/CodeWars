@@ -4,9 +4,9 @@
 //my solution
 function boolToWord(bool){
     if(bool === true){
-        return 'Yes'
+        return Yes
     }else{
-        return 'No'
+        return No
     }
     
 }
