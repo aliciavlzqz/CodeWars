@@ -38,13 +38,14 @@
 
 // });
 var humanYearsCatYearsDogYears = function(humanYears) {
-    // Your code here!
-
-    return [humanYears,(15 + ), (15 + )];
-  }
+  if (humanYears <= 2)
+    return [humanYears, 6 + 9 * humanYears, 6 + 9 * humanYears]
+  else
+    return [humanYears, 16 + 4 * humanYears, 14 + 5 * humanYears]
+}
   
 
 //Parameters-
-//Return-
+//Return-an array of numbers
 //Example-
 //Pseudocode-
