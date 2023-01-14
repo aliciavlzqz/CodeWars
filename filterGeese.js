@@ -49,15 +49,23 @@ function gooseFilter (birds) {
   //Alternate solution
 
   function gooseFilter (birds) {
-    var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+    const geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
     
-  var newArray = [];
-    for (var i =0;i<birds.length;i++) {
-    if (!geese.includes(birds[i])) {
-      newArray.push(birds[i]);
-    }
-  
+    /* 
+    return non-matches
+      return an array containing all of the strings in the input array except those that match strings in geese
+      Use a combination of Array.prototype.filter and Array.prototype.inclues
+      
+      Steps
+      1. filter creates new array
+      2. elements that pass test are implemented
+      3. includes determins whether an array includes a certain value 
+        3.a) returns a true or false (we want the false values to be returned) 
+      4. Non-Geese elements are returned
+    */
     
-    }
-  return newArray;
+    let filterGeese = birds.filter((word) => !geese.includes(word));
+    
+    //console.log(filterGeese)
+    return filterGeese
   };
