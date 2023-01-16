@@ -18,3 +18,13 @@
 // We're testing basic loops and math operations. This is for beginners who are 
 // just learning loops and math operations.
 // Advanced users may find this extremely easy and can easily write this in one line.
+
+// Sum Numbers
+function sum (numbers) {
+    "use strict";
+   let total = 0;
+  for(let i = 0; i < numbers.length; i++){
+    total += numbers[i]
+  }
+    return total
+};
