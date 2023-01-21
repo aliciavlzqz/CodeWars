@@ -43,3 +43,11 @@ function mergeArrays(arr1, arr2) {
 function mergeArrays(arr1, arr2) {
   return Array.from(new Set(arr1.concat(arr2).sort((a,b) => (a-b))));
 }
+
+
+function mergeArrays(arr1, arr2) {
+  return arr1
+    .filter((item) => !arr2.includes(item))
+    .concat(arr2)
+    .sort((a, b) => a - b)
+}
