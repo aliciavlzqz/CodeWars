@@ -20,7 +20,7 @@
 //Example-
 //Pseudocode-
 
-//additional solution
+//solution
 
 function fakeBin(x){
     var arr=[];
@@ -34,4 +34,10 @@ function fakeBin(x){
     
     }
     return arr.join("");
+    }
+
+    //additional, better solution- one line
+
+    function fakeBin(x) {
+        return x.split('').map(n => n < 5 ? 0 : 1).join('');
     }
