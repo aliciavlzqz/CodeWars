@@ -26,3 +26,6 @@
 //     assert.strictEqual(index([75,68,35,61,9,36,89,0,30], 10),-1);
 //   });
 // });
+
+//the ** means to the something of the power, in this case it's to the nth power
+index = (array, n) => array[n] ** n || -1
