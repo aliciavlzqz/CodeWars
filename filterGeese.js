@@ -31,3 +31,17 @@
 //     Test.assertDeepEquals(gooseFilter(["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]),[]);
 //   });
 // });
+
+//Parameters-a list of string words. no empty strings are included.
+//some elements may be repeated.
+//Return-a filtered list containing the same elements but with the 'geese' removed.
+//Example-["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]
+//Pseudocode-i need to filter out the geese. so I can use filter method. 
+//then I can return the result with elements that do not include geese.
+
+function gooseFilter (birds) {
+    var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+    
+    // return an array containing all of the strings in the input array except those that match strings in geese
+    return birds.filter(x => !geese.includes(x))
+  };
