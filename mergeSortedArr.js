@@ -36,4 +36,10 @@ function mergeArrays(arr1, arr2) {
     }//this loop is iterating through the array and 
   }
   return result;
+};
+
+//Alternate solution
+
+function mergeArrays(arr1, arr2) {
+  return Array.from(new Set(arr1.concat(arr2).sort((a,b) => (a-b))));
 }
