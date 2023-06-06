@@ -15,7 +15,21 @@
 // });
 
 
-//Parameters-
+//Parameters-string of numbers 
 //Return-
 //Example-
 //Pseudocode-
+
+function fakeBin(x){
+    var arr=[];
+    for(var i=0;i<x.length;i++){
+    if(Number(x[i]<5)){
+    arr.push(0);
+    }
+    else{
+    arr.push(1);
+    }
+    
+    }
+    return arr.join("");
+    }
